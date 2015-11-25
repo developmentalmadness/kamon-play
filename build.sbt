@@ -8,6 +8,8 @@ lazy val root = (project in file(".")).enablePlugins(PlayScala)
 
 scalaVersion := "2.11.6"
 
+dockerExposedPorts := Seq(9000)
+
 val kamonVersion = "0.5.1"
 
 libraryDependencies ++= Seq(
@@ -17,7 +19,7 @@ libraryDependencies ++= Seq(
   "io.kamon" %% "kamon-statsd" % kamonVersion,
   "io.kamon" %% "kamon-log-reporter" % kamonVersion,
   "io.kamon" %% "kamon-system-metrics" % kamonVersion,
-  "org.aspectj" % "aspectjweaver" % "1.8.6",
+  "org.aspectj" % "aspectjweaver" % "1.8.7",
   jdbc,
   cache,
   ws,
@@ -30,3 +32,8 @@ resolvers += "scalaz-bintray" at "http://dl.bintray.com/scalaz/releases"
 // other, legacy style, accesses its actions statically.
 routesGenerator := InjectedRoutesGenerator
 
+//javaOptions in run += "-Xset:weaveJavaxPackages=true -Dapplication.config=config/application.config"
+//aspectjSettings
+
+//javaOptions in run <++= AspectjKeys.weaverOptions in Aspectj
+//javaOptions in run += "-Xset:weaveJavaxPackages=true"

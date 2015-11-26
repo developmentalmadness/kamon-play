@@ -14,7 +14,7 @@ val kamonVersion = "0.5.1"
 
 libraryDependencies ++= Seq(
   "io.kamon" %% "kamon-core" % kamonVersion,
-  "io.kamon" %% "kamon-akka" % kamonVersion,
+  //"io.kamon" %% "kamon-akka" % kamonVersion,
   "io.kamon" %% "kamon-play-24" % kamonVersion,
   "io.kamon" %% "kamon-statsd" % kamonVersion,
   "io.kamon" %% "kamon-log-reporter" % kamonVersion,

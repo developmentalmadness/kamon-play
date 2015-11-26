@@ -1,5 +1,3 @@
-//resolvers += Resolver.url("Typesafe Ivy releases", url("https://repo.typesafe.com/typesafe/ivy-releases"))(Resolver.ivyStylePatterns)
-
 // The Play plugin
 addSbtPlugin("com.typesafe.play" % "sbt-plugin" % "2.4.4")
 
@@ -16,8 +14,6 @@ addSbtPlugin("com.typesafe.sbt" % "sbt-rjs" % "1.0.7")
 addSbtPlugin("com.typesafe.sbt" % "sbt-digest" % "1.1.0")
 
 addSbtPlugin("com.typesafe.sbt" % "sbt-mocha" % "1.1.0")
-
-//addSbtPlugin("com.typesafe.sbt" % "sbt-aspectj" % "0.10.4")
 
 addSbtPlugin("io.kamon" % "aspectj-play-runner" % "0.1.2")
 

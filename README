@@ -1,4 +1,5 @@
-This is your new Play application
-=================================
+To run this project requires the following command:
 
-This file will be packaged with your application, when using `activator dist`.
+    sbt aspectj-runner:run -Dkamon.auto-start=true -Dconf.file=conf/application.conf
+
+To get this project working with both kamon-play-24 and kamon-akka requires aspectj-play-runner 0.1.3 plugin

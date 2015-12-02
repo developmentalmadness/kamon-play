@@ -15,6 +15,6 @@ addSbtPlugin("com.typesafe.sbt" % "sbt-digest" % "1.1.0")
 
 addSbtPlugin("com.typesafe.sbt" % "sbt-mocha" % "1.1.0")
 
-addSbtPlugin("io.kamon" % "aspectj-play-runner" % "0.1.2")
+addSbtPlugin("io.kamon" % "aspectj-play-runner" % "0.1.3")
 
 addSbtPlugin("com.typesafe.sbt" % "sbt-native-packager" % "1.0.3")

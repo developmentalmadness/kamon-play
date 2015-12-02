@@ -8,11 +8,12 @@ scalaVersion := "2.11.6"
 
 dockerExposedPorts := Seq(9000)
 
-val kamonVersion = "0.5.1"
+val kamonVersion = "0.5.2"
 
 libraryDependencies ++= Seq(
   "io.kamon" %% "kamon-core" % kamonVersion,
   "io.kamon" %% "kamon-play-24" % kamonVersion,
+  "io.kamon" %% "kamon-akka" % kamonVersion,
   "io.kamon" %% "kamon-statsd" % kamonVersion,
   "io.kamon" %% "kamon-log-reporter" % kamonVersion,
   "io.kamon" %% "kamon-system-metrics" % kamonVersion,

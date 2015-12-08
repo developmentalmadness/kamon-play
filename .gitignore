@@ -14,6 +14,7 @@ src_managed/
 project/boot/
 project/plugins/project/
 .sbtserver
+native/
 
 # Scala-IDE specific
 .scala_dependencies
